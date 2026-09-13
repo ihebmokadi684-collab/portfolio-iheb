@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-hugo-site",
+  "private": true,
+  "devDependencies": {
+    "hugo-bin": "0.163.0"
+  }
+}
