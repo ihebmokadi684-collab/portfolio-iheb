@@ -16,7 +16,7 @@ Hugo viene con varios [Shortcodes Integrados](https://gohugo.io/content-manageme
 
 ## Shortcode Simple de X
 ```
-{{</* tweet user="GoHugoIO" id="1315233626070503424" */>}}
+{{</* x user="GoHugoIO" id="1315233626070503424" */>}}
 ```
 <br>
 <!-- Temporarily removed for build -->
@@ -37,11 +37,10 @@ Hugo viene con varios [Shortcodes Integrados](https://gohugo.io/content-manageme
 ## Shortcode gist
 
 ```
-{{</* gist spf13 7896402 */>}}
+https://gist.github.com/spf13/7896402
 ```
 <br>
-{{< gist spf13 7896402 >}}
+[Ver el Gist](https://gist.github.com/spf13/7896402)
 <br>
 
 ---
-
