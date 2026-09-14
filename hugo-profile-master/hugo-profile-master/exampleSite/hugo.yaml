@@ -59,9 +59,9 @@ params:
       enable: true
     button:
       enable: true
-      name: "Me contacter"
-      url: "#contact"
-      download: false
+      name: "Télécharger mon CV"
+      url: "/cv.html"
+      download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
@@ -99,7 +99,7 @@ params:
     title: "Expériences professionnelles"
     items:
       - company: "Tuniform"
-        companyUrl: "#"
+        companyUrl: "https://tuniform.tn/"
         jobs:
           - name: "Stagiaire fin d'études"
             date: "Juin 2025 - Août 2025"
@@ -141,10 +141,14 @@ params:
     enable: true
     title: "Certifications & qualités"
     items:
-      - title: "Microsoft Office Specialist - Excel Associate (2022)"
+      - title: "Microsoft Office Specialist - Excel Associate (2019)"
         content: "Certification Microsoft Office Specialist."
+        url: "https://www.credly.com/earner/dashboard/home"
       - title: "Microsoft Office Specialist - Word Associate (2021)"
         content: "Certification Microsoft Office Specialist."
+      - title: "Linux Install Party - 2nd Edition"
+        content: "Certificat de participation à un événement consacré aux technologies open source, organisé par le Development Technology Club de la FSEG."
+        url: "/certificates/Certificate_participants.IhebMokadi.pdf"
       - title: "Qualités professionnelles"
         content: "Créativité, esprit d'équipe, adaptabilité, sens de l'organisation, gestion du temps, communication, résolution de problèmes, motivation et apprentissage rapide."
 
@@ -155,6 +159,9 @@ params:
       - title: "Tuniform - Plateforme pour créateurs de contenu"
         content: "Conception et développement d'une plateforme de créateurs avec fonctionnalités de monétisation, abonnements Premium, contenus payants et gestion des revenus."
         image: /images/projects/profile.png
+        featured:
+          name: "Voir le projet"
+          link: "https://tuniform.tn/"
         badges:
           - "PHP"
           - "JavaScript"
