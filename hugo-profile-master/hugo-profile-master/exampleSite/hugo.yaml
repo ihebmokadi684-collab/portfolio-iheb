@@ -4,6 +4,9 @@ title: "Iheb Mokadi | Business Intelligence & Full-Stack Developer"
 theme: hugo-profile
 defaultContentLanguage: "fr"
 defaultContentLanguageInSubdir: false
+staticDir:
+  - "static"
+  - "../images"
 
 outputs:
   home:
@@ -148,7 +151,7 @@ params:
         content: "Certification Microsoft Office Specialist."
       - title: "Linux Install Party - 2nd Edition"
         content: "Certificat de participation à un événement consacré aux technologies open source, organisé par le Development Technology Club de la FSEG."
-        url: "/certificates/Certificate_participants.IhebMokadi.pdf"
+        url: "/Certificate_participants.IhebMokadi.pdf"
       - title: "Qualités professionnelles"
         content: "Créativité, esprit d'équipe, adaptabilité, sens de l'organisation, gestion du temps, communication, résolution de problèmes, motivation et apprentissage rapide."
 
@@ -157,7 +160,7 @@ params:
     title: "Projet de fin d'études"
     items:
       - title: "Tuniform - Plateforme pour créateurs de contenu"
-        content: "Conception et développement d'une plateforme de créateurs avec fonctionnalités de monétisation, abonnements Premium, contenus payants et gestion des revenus."
+        content: "Tuniform est une plateforme tunisienne qui aide les créateurs à transformer leur audience, leurs contenus et leurs compétences en revenus. Le projet propose des abonnements, des communautés, des produits numériques et des fonctionnalités de monétisation avec des moyens de paiement locaux. J'ai participé à la conception et au développement de fonctionnalités web, à l'intégration d'API, à la gestion des données et à l'amélioration des performances."
         image: /images/projects/profile.png
         featured:
           name: "Voir le projet"
