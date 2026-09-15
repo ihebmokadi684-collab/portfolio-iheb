@@ -112,13 +112,13 @@ params:
               - Développement de fonctionnalités web avec PHP et MySQL.
               - Intégration d'API et gestion des bases de données.
               - Correction de bugs et amélioration des performances.
-      - company: "Projet académique"
+      - company: "AlumPro"
         companyUrl: "#"
         jobs:
           - name: "Développeur Web"
             date: "Déc. 2024 - Fév. 2025"
             content: |
-              Développement d'une application web de gestion.
+              Développement d'une application web pour AlumPro.
 
               - Création de l'interface utilisateur avec HTML, CSS et JavaScript.
               - Développement du backend avec PHP et MySQL.
