@@ -69,7 +69,7 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://github.com/
+          url: https://github.com/ihebmokadi684-collab
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/
 
@@ -192,7 +192,7 @@ params:
       title: "Articles récents"
       enable: false
     socialNetworks:
-      github: https://github.com/
+      github: https://github.com/ihebmokadi684-collab
       linkedin: https://www.linkedin.com/
       twitter: ""
       instagram: ""
