@@ -63,15 +63,21 @@ params:
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: "/cv.html"
+      url: "/cv1.png"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://github.com/ihebmokadi684-collab
+          url: https://github.com/
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/
+          url: https://www.linkedin.com/in/iheb-mokadi-7406732a6/
+        - icon: fab fa-whatsapp
+          url: https://web.whatsapp.com/
+        - icon: fab fa-facebook
+          url: https://www.facebook.com/iheb.mokadi
+        - icon: fab fa-instagram
+          url: https://www.instagram.com/ihebmokadi/
 
   about:
     enable: true
@@ -112,13 +118,13 @@ params:
               - Développement de fonctionnalités web avec PHP et MySQL.
               - Intégration d'API et gestion des bases de données.
               - Correction de bugs et amélioration des performances.
-      - company: "AlumPro"
+      - company: "Projet académique"
         companyUrl: "#"
         jobs:
           - name: "Développeur Web"
             date: "Déc. 2024 - Fév. 2025"
             content: |
-              Développement d'une application web pour AlumPro.
+              Développement d'une application web de gestion.
 
               - Création de l'interface utilisateur avec HTML, CSS et JavaScript.
               - Développement du backend avec PHP et MySQL.
@@ -162,6 +168,7 @@ params:
       - title: "Tuniform - Plateforme pour créateurs de contenu"
         content: "Tuniform est une plateforme tunisienne qui aide les créateurs à transformer leur audience, leurs contenus et leurs compétences en revenus. Le projet propose des abonnements, des communautés, des produits numériques et des fonctionnalités de monétisation avec des moyens de paiement locaux. J'ai participé à la conception et au développement de fonctionnalités web, à l'intégration d'API, à la gestion des données et à l'amélioration des performances."
         image: /images/projects/profile.png
+        video: /videos/alumpro.mp4
         featured:
           name: "Voir le projet"
           link: "https://tuniform.tn/"
@@ -192,11 +199,12 @@ params:
       title: "Articles récents"
       enable: false
     socialNetworks:
-      github: https://github.com/ihebmokadi684-collab
-      linkedin: https://www.linkedin.com/
+      github: https://github.com/
+      linkedin: https://www.linkedin.com/in/iheb-mokadi-7406732a6/
+      whatsapp: https://web.whatsapp.com/
       twitter: ""
-      instagram: ""
-      facebook: ""
+      instagram: https://www.instagram.com/ihebmokadi/
+      facebook: https://www.facebook.com/iheb.mokadi
 
   listPages:
     disableFeaturedImage: false
