@@ -152,8 +152,6 @@ params:
     items:
       - title: "Microsoft Office Specialist - Excel Associate (2019)"
         content: "Certification Microsoft Office Specialist."
-      - title: "Microsoft Office Specialist - Word Associate (2021)"
-        content: "Certification Microsoft Office Specialist."
       - title: "Linux Install Party - 2nd Edition"
         content: "Certificat de participation à un événement consacré aux technologies open source, organisé par le Development Technology Club de la FSEG."
         url: certificates/Certificate_participants.IhebMokadi.pdf
