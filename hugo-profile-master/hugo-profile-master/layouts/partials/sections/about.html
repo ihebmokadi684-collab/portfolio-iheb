@@ -4,10 +4,10 @@
     <div class="container bg-transparent">
         <h3 class="text-center bg-transparent">{{ $about.title | default (i18n "about") }}</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
-            {{ if .Site.Params.about.image }}
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+            {{ if $about.image }}
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0">
                 <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image | relURL }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
+                    <img src="{{ $about.image | relURL }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
                 </div>
                 <h4 class="text-center mt-3">Iheb Mokadi</h4>
             </div>
