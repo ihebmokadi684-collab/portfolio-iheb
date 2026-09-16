@@ -63,9 +63,9 @@ params:
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: "/cv1.png"
-      download: true
-      newPage: false
+      url: "/cv.html"
+      download: false
+      newPage: true
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -152,12 +152,12 @@ params:
     items:
       - title: "Microsoft Office Specialist - Excel Associate (2019)"
         content: "Certification Microsoft Office Specialist."
-        url: "https://www.credly.com/earner/dashboard/home"
       - title: "Microsoft Office Specialist - Word Associate (2021)"
         content: "Certification Microsoft Office Specialist."
       - title: "Linux Install Party - 2nd Edition"
         content: "Certificat de participation à un événement consacré aux technologies open source, organisé par le Development Technology Club de la FSEG."
-        url: "/Certificate_participants.IhebMokadi.pdf"
+        url: "/certificates/Certificate_participants.IhebMokadi.pdf"
+        image: "/images/certif-linux.png"
       - title: "Qualités professionnelles"
         content: "Créativité, esprit d'équipe, adaptabilité, sens de l'organisation, gestion du temps, communication, résolution de problèmes, motivation et apprentissage rapide."
 
@@ -180,6 +180,18 @@ params:
           - "MySQL"
           - "Git"
           - "GitHub"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:ihebmokadi684@gmail.com
+      - title: "Alumpro - Application web de gestion"
+        content: "Alumpro est une application web de gestion conçue pour centraliser les informations, simplifier le suivi des activités et faciliter l'organisation grâce à une interface claire et des fonctionnalités adaptées aux besoins des utilisateurs."
+        image: /images/projects/profile2.jpg
+        badges:
+          - "HTML5"
+          - "CSS3"
+          - "JavaScript"
+          - "PHP"
+          - "MySQL"
         links:
           - icon: fa fa-envelope
             url: mailto:ihebmokadi684@gmail.com
