@@ -163,7 +163,7 @@ params:
 
   projects:
     enable: true
-    title: "Projet de fin d'études"
+    title: "Projets exécutés"
     items:
       - title: "Tuniform - Plateforme pour créateurs de contenu"
         content: "Tuniform est une plateforme tunisienne qui aide les créateurs à transformer leur audience, leurs contenus et leurs compétences en revenus. Le projet propose des abonnements, des communautés, des produits numériques et des fonctionnalités de monétisation avec des moyens de paiement locaux. J'ai participé à la conception et au développement de fonctionnalités web, à l'intégration d'API, à la gestion des données et à l'amélioration des performances."
