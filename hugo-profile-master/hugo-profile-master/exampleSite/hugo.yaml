@@ -63,9 +63,9 @@ params:
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: cv.html
-      download: false
-      newPage: true
+      url: images/CV_Iheb_Mokadi.png
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
