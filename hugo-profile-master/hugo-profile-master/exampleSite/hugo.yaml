@@ -56,14 +56,14 @@ params:
     title: "Iheb Mokadi."
     subtitle: "Business Intelligence | Développeur Full-Stack Junior"
     content: "Jeune diplômé en Licence Informatique Appliquée à la Gestion, spécialité Business Intelligence, passionné par le développement web, l'analyse de données et les nouvelles technologies."
-    image: /images/me.png
+    image: images/me.png
     roundImage: true
     bottomImage:
       enable: true
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: "/cv.html"
+      url: cv.html
       download: false
       newPage: true
     socialLinks:
@@ -82,7 +82,7 @@ params:
   about:
     enable: true
     title: "À propos de moi"
-    image: "/images/me.png"
+    image: images/me.png
     content: |-
       Jeune diplômé en Licence Informatique Appliquée à la Gestion, spécialité Business Intelligence à la FSEG Nabeul. Curieux, autonome et créatif, je souhaite intégrer une entreprise innovante afin de mettre en pratique mes compétences techniques et participer au développement de solutions performantes.
 
@@ -156,8 +156,8 @@ params:
         content: "Certification Microsoft Office Specialist."
       - title: "Linux Install Party - 2nd Edition"
         content: "Certificat de participation à un événement consacré aux technologies open source, organisé par le Development Technology Club de la FSEG."
-        url: "/certificates/Certificate_participants.IhebMokadi.pdf"
-        image: "/images/certif-linux.png"
+        url: certificates/Certificate_participants.IhebMokadi.pdf
+        image: images/certif-linux.png
       - title: "Qualités professionnelles"
         content: "Créativité, esprit d'équipe, adaptabilité, sens de l'organisation, gestion du temps, communication, résolution de problèmes, motivation et apprentissage rapide."
 
@@ -167,7 +167,7 @@ params:
     items:
       - title: "Tuniform - Plateforme pour créateurs de contenu"
         content: "Tuniform est une plateforme tunisienne qui aide les créateurs à transformer leur audience, leurs contenus et leurs compétences en revenus. Le projet propose des abonnements, des communautés, des produits numériques et des fonctionnalités de monétisation avec des moyens de paiement locaux. J'ai participé à la conception et au développement de fonctionnalités web, à l'intégration d'API, à la gestion des données et à l'amélioration des performances."
-        image: /images/projects/profile.png
+        image: images/projects/profile.png
         featured:
           name: "Voir le projet"
           link: "https://tuniform.tn/"
@@ -185,7 +185,7 @@ params:
             url: mailto:ihebmokadi684@gmail.com
       - title: "Alumpro - Application web de gestion"
         content: "Alumpro est une application web de gestion conçue pour centraliser les informations, simplifier le suivi des activités et faciliter l'organisation grâce à une interface claire et des fonctionnalités adaptées aux besoins des utilisateurs."
-        image: /images/projects/profile2.jpg
+        image: images/projects/profile2.jpg
         badges:
           - "HTML5"
           - "CSS3"

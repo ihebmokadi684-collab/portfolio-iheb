@@ -8,10 +8,10 @@
                 {{ range $achievements.items | default .Site.Params.achievements.items }}
                 {{ if .url }}
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="{{ .url }}" title="{{ .title }}" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="{{ .url | relURL }}" title="{{ .title }}" target="_blank">
                         {{if .image }}
                             <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
+                                <img class="card-img-top" src="{{ .image | relURL }}">
                             </div>
                         {{ end }}
                         <div class="card-body bg-transparent">
@@ -27,7 +27,7 @@
                     <div class="card my-3 h-100 p-3" title="{{ .title }}">
                         {{if .image }}
                             <div class="card-head">
-                                <img class="card-img-top" src="{{ .image }}">
+                                <img class="card-img-top" src="{{ .image | relURL }}">
                             </div>
                         {{ end }}
                         <div class="card-body bg-transparent">
