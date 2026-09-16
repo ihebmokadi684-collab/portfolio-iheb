@@ -63,7 +63,7 @@ params:
     button:
       enable: true
       name: "Télécharger mon CV"
-      url: images/CV_Iheb_Mokadi.png
+      url: cv.pdf
       download: true
       newPage: false
     socialLinks:
