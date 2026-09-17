@@ -27,7 +27,6 @@ markup:
 params:
   title: "Iheb Mokadi"
   description: "Portfolio d'Iheb Mokadi, développeur Business Intelligence et Full-Stack Junior."
-  favicon: "/fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
