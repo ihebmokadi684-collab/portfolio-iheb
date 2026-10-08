@@ -2,7 +2,9 @@
 {{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
 <section id="experience" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
+        <header class="section-heading">
+            <h3>{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
+        </header>
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 py-5">
                 <div class="experience-container px-3 pt-2">
@@ -45,7 +47,7 @@
                                 aria-labelledby='{{ replaceRE "-+" "-" (replaceRE "[^a-zA-Z0-9]" "-" (print .company "-" $firstJobDate)) | lower }}-tab'
                             >
                                 {{ range $jobIdx, $job := .jobs }}
-                                    <div>
+                                    <article class="experience-entry">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div>
                                                 <span class="{{ if eq $jobIdx 0 }}h4{{ else }}h5{{ end }}">{{ $job.name }}</span>
@@ -110,7 +112,7 @@
                                         <div class="pb-2 pb-3">
                                             {{ $job.content | markdownify}}
                                         </div>
-                                    </div>
+                                    </article>
                                 {{ end }}
                             </div>
                         

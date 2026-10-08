@@ -4,15 +4,17 @@
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
-                <span class="subtitle">
-                    {{ $hero.intro }}
-                </span>
-                <h1 id="hero-title">
-                    {{ $hero.title }}
-                </h1>
-                <h2>
-                    {{ $hero.subtitle }}
-                </h2>
+                <header class="hero-copy-header">
+                    <span class="subtitle">
+                        {{ $hero.intro }}
+                    </span>
+                    <h1 id="hero-title">
+                        {{ $hero.title }}
+                    </h1>
+                    <h2>
+                        {{ $hero.subtitle }}
+                    </h2>
+                </header>
                 <p class="hero-content">
                     {{ $hero.content | markdownify }}
                 </p>
@@ -33,12 +35,12 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 hero-portrait">
-                <div class="image {{ if .Site.Params.animate }}animate{{ end }} text-center">
+                <figure class="image {{ if .Site.Params.animate }}animate{{ end }} text-center">
                     <img src="{{ .Site.Params.hero.image | relURL }}"
                         class="img-thumbnail mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
                         alt="{{ .Site.Params.title }} profile image"
                     >
-                </div>
+                </figure>
             </div>
         </div>
     </div>

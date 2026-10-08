@@ -789,12 +789,12 @@ header .navbar.animate {
     scroll-margin-top: 5rem;
 }
 
-#about .container > h3,
-#experience .container > h3,
-#education .container > h3,
-#projects .container > h3,
-#achievements .container > h3,
-#contact .container > h3 {
+#about .container > .section-heading > h3,
+#experience .container > .section-heading > h3,
+#education .container > .section-heading > h3,
+#projects .container > .section-heading > h3,
+#achievements .container > .section-heading > h3,
+#contact .container > .section-heading > h3 {
     margin-bottom: 2.5rem;
     font-size: 2rem;
     font-weight: 700;
@@ -803,12 +803,12 @@ header .navbar.animate {
     color: #f1f5fc !important;
 }
 
-#about .container > h3::after,
-#experience .container > h3::after,
-#education .container > h3::after,
-#projects .container > h3::after,
-#achievements .container > h3::after,
-#contact .container > h3::after {
+#about .container > .section-heading > h3::after,
+#experience .container > .section-heading > h3::after,
+#education .container > .section-heading > h3::after,
+#projects .container > .section-heading > h3::after,
+#achievements .container > .section-heading > h3::after,
+#contact .container > .section-heading > h3::after {
     display: block;
     width: 3.25rem;
     height: 3px;
@@ -929,12 +929,12 @@ header .navbar.animate {
         padding-block: 3.5rem !important;
     }
 
-    #about .container > h3,
-    #experience .container > h3,
-    #education .container > h3,
-    #projects .container > h3,
-    #achievements .container > h3,
-    #contact .container > h3 {
+    #about .container > .section-heading > h3,
+    #experience .container > .section-heading > h3,
+    #education .container > .section-heading > h3,
+    #projects .container > .section-heading > h3,
+    #achievements .container > .section-heading > h3,
+    #contact .container > .section-heading > h3 {
         margin-bottom: 1.75rem;
         font-size: 1.75rem;
     }

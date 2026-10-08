@@ -2,7 +2,9 @@
 {{- $achievements := .Site.Language.Params.achievements | default .Site.Params.achievements -}}
 <section id="achievements" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        <header class="section-heading">
+            <h3>{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        </header>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
                 {{ range $achievements.items | default .Site.Params.achievements.items }}
@@ -24,7 +26,7 @@
                 </div>
                 {{ else }}
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100 p-3" title="{{ .title }}">
+                    <article class="card my-3 h-100 p-3" title="{{ .title }}">
                         {{if .image }}
                             <div class="card-head">
                                 <img class="card-img-top" src="{{ .image | relURL }}">
@@ -36,7 +38,7 @@
                                 {{ .content }}
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 {{ end }}
                 {{ end }}
