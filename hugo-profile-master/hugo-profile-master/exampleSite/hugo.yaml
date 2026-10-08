@@ -32,7 +32,24 @@ params:
   animate: true
 
   theme:
-    defaultTheme: "light"
+    defaultTheme: "dark"
+
+  color:
+    textColor: "#edf3ff"
+    secondaryTextColor: "#9aa9c0"
+    textLinkColor: "#4b9dff"
+    backgroundColor: "#070d1b"
+    secondaryBackgroundColor: "#0d1628"
+    primaryColor: "#087cff"
+    secondaryColor: "#101b30"
+    darkmode:
+      textColor: "#edf3ff"
+      secondaryTextColor: "#9aa9c0"
+      textLinkColor: "#63aaff"
+      backgroundColor: "#070d1b"
+      secondaryBackgroundColor: "#0d1628"
+      primaryColor: "#4b9dff"
+      secondaryColor: "#101b30"
 
   navbar:
     align: ms-auto

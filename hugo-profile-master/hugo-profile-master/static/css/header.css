@@ -133,6 +133,32 @@ header.showHeaderOnTop {
     box-shadow: 0 12px 32px rgb(20 35 50 / 8%);
 }
 
+#profileHeader {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0.85rem clamp(1rem, 3vw, 3rem);
+    background: transparent;
+    transition: background-color 180ms ease, padding 180ms ease;
+}
+
+#profileHeader .navbar {
+    width: min(100%, 1560px);
+    min-height: 4.5rem;
+    margin-inline: auto;
+    padding: 0.45rem 1.25rem;
+    border: 1px solid rgb(148 170 205 / 16%);
+    border-radius: 1.1rem;
+    background: rgb(7 13 27 / 92%);
+    box-shadow: 0 0.75rem 2.5rem rgb(0 0 0 / 18%);
+    backdrop-filter: blur(16px);
+}
+
+#profileHeader .navbar .container-fluid {
+    gap: 1rem;
+    margin-inline: 0 !important;
+}
+
 header .navbar {
     min-height: 4.5rem;
     padding-block: 0.5rem;
@@ -141,6 +167,7 @@ header .navbar {
 header .navbar-brand {
     font-size: 1.1rem;
     font-weight: 700;
+    color: #edf3ff !important;
 }
 
 header .navbar-nav .nav-link {
@@ -177,6 +204,14 @@ header .navbar-nav .nav-link:focus-visible {
 }
 
 @media (max-width: 991.98px) {
+    #profileHeader {
+        padding: 0.65rem 0.75rem;
+    }
+
+    #profileHeader .navbar {
+        padding-inline: 0.85rem;
+    }
+
     header .navbar-collapse.show {
         margin-top: 0.75rem;
         padding: 0.75rem;
