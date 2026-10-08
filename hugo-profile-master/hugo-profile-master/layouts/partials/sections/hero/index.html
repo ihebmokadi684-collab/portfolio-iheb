@@ -37,7 +37,8 @@
             <div class="col-sm-12 col-md-12 col-lg-4 hero-portrait">
                 <figure class="image {{ if .Site.Params.animate }}animate{{ end }} text-center">
                     <img src="{{ .Site.Params.hero.image | relURL }}"
-                        class="img-thumbnail mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
+                        class="img-thumbnail mx-auto"
+                        fetchpriority="high"
                         alt="{{ .Site.Params.title }} profile image"
                     >
                 </figure>

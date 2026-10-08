@@ -15,10 +15,10 @@
                     <div class="row justify-content-center">
                         <form id="contact-form" action="https://formspree.io/f/{{ .Site.Params.contact.formspree.formId }}" onsubmit="handleFormspreeSubmit(event)" method="POST" class="col-md-7">
                             <div class="form-group pt-3">
-                                <input type="email" class="form-control"  name="email" required="true" placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default (i18n "contact_email_placeholder") }}'>
+                                <input type="email" class="form-control" name="email" required="true" aria-label='{{ .Site.Params.contact.formspree.emailCaption | emojify | default (i18n "contact_email_placeholder") }}' placeholder='{{ .Site.Params.contact.formspree.emailCaption | emojify | default (i18n "contact_email_placeholder") }}'>
                             </div>
                             <div class="form-group pt-3">
-                                <textarea class="form-control" name="message" required="true" placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default (i18n "contact_message_placeholder") }}' rows="{{ .Site.Params.contact.formspree.messageRows | default 3 }}"></textarea>
+                                <textarea class="form-control" name="message" required="true" aria-label='{{ .Site.Params.contact.formspree.messageCaption | emojify | default (i18n "contact_message_placeholder") }}' placeholder='{{ .Site.Params.contact.formspree.messageCaption | emojify | default (i18n "contact_message_placeholder") }}' rows="{{ .Site.Params.contact.formspree.messageRows | default 3 }}"></textarea>
                             </div>
                             <div class="form-group text-center pt-3">
                                 <button type="submit" class="btn">{{ $contact.btnName | default .Site.Params.contact.btnName | default (i18n "contact") }}</button>

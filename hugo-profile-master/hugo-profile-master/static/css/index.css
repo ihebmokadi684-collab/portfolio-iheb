@@ -582,6 +582,7 @@ header .navbar.animate {
 }
 
 #content {
+    font-family: "Roboto", sans-serif;
     background-image:
         linear-gradient(rgb(72 119 184 / 3%) 1px, transparent 1px),
         linear-gradient(90deg, rgb(72 119 184 / 3%) 1px, transparent 1px);
@@ -677,8 +678,7 @@ header .navbar.animate {
 
 #hero .image {
     position: relative;
-    width: 100%;
-    max-width: 22rem;
+    width: min(100%, 21rem);
     margin-inline: auto;
     padding: 0;
     isolation: isolate;
@@ -693,7 +693,7 @@ header .navbar.animate {
 #hero .image::before {
     position: absolute;
     z-index: -1;
-    inset: 4% 4%;
+    inset: 3% -5%;
     border: 1px solid rgb(31 126 255 / 35%);
     border-radius: 50%;
     content: "";
@@ -704,7 +704,7 @@ header .navbar.animate {
 #hero .image::after {
     position: absolute;
     z-index: -1;
-    inset: 0;
+    inset: -2% -10%;
     border: 1px dashed rgb(31 126 255 / 24%);
     border-radius: 50%;
     content: "";
@@ -714,10 +714,12 @@ header .navbar.animate {
 #hero .image img {
     display: block;
     width: 100%;
-    aspect-ratio: 1;
+    height: auto;
+    max-height: min(72svh, 40rem);
     margin-inline: auto;
-    object-fit: cover;
+    object-fit: contain;
     border: 0;
+    border-radius: 48% 48% 0.75rem 0.75rem;
     background: transparent;
     box-shadow: 0 1.5rem 5rem rgb(0 82 190 / 25%);
 }
@@ -745,7 +747,7 @@ header .navbar.animate {
     }
 
     #hero .image {
-        max-width: 19rem;
+        width: min(76vw, 19rem);
     }
 }
 
@@ -834,7 +836,8 @@ header .navbar.animate {
 }
 
 #education .container > .row > .col-12 > .row > .col-md-9 {
-    width: 100%;
+    width: auto;
+    flex: 1 1 auto;
 }
 
 #education .card,
@@ -909,6 +912,20 @@ header .navbar.animate {
     padding: 1.25rem 0.75rem 0.5rem;
 }
 
+#experience .experience-entry > .d-flex {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+#experience .experience-entry > .d-flex > :first-child {
+    min-width: min(100%, 14rem);
+}
+
+#experience .experience-entry > .d-flex > :last-child {
+    margin-left: auto;
+    text-align: right;
+}
+
 #achievements .card {
     border-radius: 0.5rem;
     box-shadow: 0 0.75rem 2rem rgb(20 35 50 / 6%);
@@ -941,6 +958,11 @@ header .navbar.animate {
 
     #experience .experience-container .tab-content {
         padding-inline: 0.25rem;
+    }
+
+    #experience .experience-entry > .d-flex > :last-child {
+        margin-left: 0;
+        text-align: left;
     }
 
     #hero h1 {
@@ -1001,5 +1023,99 @@ header .navbar.animate {
 
     #projects .row > [class*="col-"] {
         padding-inline: 0.5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* Skills and accessible scroll interactions */
+#about .skills-heading {
+    margin-top: 1.75rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#about .skills-list {
+    display: flex;
+    grid-template-columns: none;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 0;
+    overflow: visible;
+}
+
+#about .skills-list .skill-badge {
+    margin: 0;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid rgb(75 157 255 / 28%);
+    border-radius: 999px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+#about .skills-list .skill-badge::before {
+    content: none;
+}
+
+.back-to-top {
+    position: fixed;
+    right: clamp(1rem, 3vw, 2rem);
+    bottom: clamp(1rem, 3vw, 2rem);
+    z-index: 90;
+    display: grid;
+    width: 2.9rem;
+    height: 2.9rem;
+    place-items: center;
+    border: 1px solid rgb(75 157 255 / 50%);
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 25%);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(0.5rem);
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:focus-visible {
+    outline: 2px solid var(--text-color);
+    outline-offset: 3px;
+}
+
+body.has-scroll-reveal .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition: opacity 550ms ease, transform 550ms ease;
+}
+
+body.has-scroll-reveal .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header .navbar-nav .nav-link[aria-current="location"] {
+    color: var(--primary-color) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    body.has-scroll-reveal .reveal-on-scroll,
+    .back-to-top {
+        transition: none;
+        transform: none;
     }
 }
