@@ -13,9 +13,11 @@
                                 {{ $firstJobDate = (index .jobs 0).date }}
                             {{ end }}
                             <li class="nav-item px-1 bg-transparent" role="presentation">
-                                <div
+                                <button
+                                    type="button"
                                     class="nav-link {{ if (eq $index 0) }}active{{ end }} bg-transparent"
-                                    aria-selected="true"
+                                    aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+                                    tabindex="{{ if eq $index 0 }}0{{ else }}-1{{ end }}"
                                     role="tab"
                                     data-bs-toggle="pill"
                                     id='{{ replaceRE "-+" "-" (replaceRE "[^a-zA-Z0-9]" "-" (print .company "-" $firstJobDate)) | lower }}-tab'
@@ -23,7 +25,7 @@
                                     aria-controls='{{ replaceRE "-+" "-" (replaceRE "[^a-zA-Z0-9]" "-" (print .company "-" $firstJobDate)) | lower }}'
                                 >
                                     {{ .company }}
-                                </div>
+                                </button>
                             </li>
                         {{ end }}
                     </ul>

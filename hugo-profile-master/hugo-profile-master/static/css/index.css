@@ -570,3 +570,278 @@ header .navbar.animate {
     box-shadow: 0px 8px 56px rgb(15 80 100 / 5%);
     padding: .5rem 1rem;
 }
+
+/* Hero refresh */
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: min(850px, calc(100svh - 72px));
+    padding-block: clamp(4rem, 8vh, 7rem) !important;
+    overflow: hidden;
+}
+
+#hero .container > .row {
+    align-items: center;
+    row-gap: 2.5rem;
+}
+
+#hero .content.animate {
+    animation: fade-left 0.8s ease-out both;
+}
+
+#hero .subtitle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    margin-bottom: 1.25rem;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--text-secondary-color);
+    border-radius: 999px;
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+#hero h1 {
+    margin-bottom: 0.35rem;
+    font-size: 4.75rem;
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+}
+
+#hero h2 {
+    max-width: 38rem;
+    font-size: 2rem;
+    line-height: 1.3;
+    opacity: 0.78;
+}
+
+#hero p {
+    max-width: 42rem;
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#hero .hero-actions {
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+#hero a.btn {
+    min-height: 2.75rem;
+    margin-top: 0;
+    border-radius: 0.5rem;
+    transition: transform 180ms ease, background-color 180ms ease, opacity 180ms ease;
+}
+
+#hero a.btn:hover {
+    transform: translateY(-2px);
+}
+
+#hero .hero-social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#hero .hero-social-links .px-1 {
+    padding-inline: 0 !important;
+}
+
+#hero a.btn.social-icon {
+    display: inline-grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+    border-radius: 50%;
+}
+
+#hero .image {
+    position: relative;
+    isolation: isolate;
+}
+
+#hero .image::before {
+    position: absolute;
+    z-index: -1;
+    inset: 8% 12%;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    content: "";
+    opacity: 0.45;
+    transform: rotate(-12deg) scale(1.08);
+}
+
+#hero .image img {
+    width: min(100%, 22rem);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 0;
+    background: transparent;
+    box-shadow: 0 1.5rem 4rem rgb(15 80 100 / 18%);
+}
+
+#hero .hero-bottom-svg {
+    display: none !important;
+}
+
+@media (max-width: 991.98px) {
+    #hero {
+        min-height: auto;
+        padding-block: 4rem !important;
+    }
+
+    #hero .content {
+        text-align: center;
+    }
+
+    #hero .hero-content {
+        margin-inline: auto !important;
+    }
+
+    #hero .hero-actions {
+        justify-content: center;
+    }
+
+    #hero .image img {
+        width: min(100%, 19rem);
+    }
+}
+
+@media (max-width: 575.98px) {
+    #hero {
+        padding-block: 3rem !important;
+    }
+
+    #hero h1 {
+        font-size: 3.25rem;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #hero .content.animate,
+    #hero .image.animate img {
+        animation: none;
+    }
+
+    #hero a.btn {
+        transition: none;
+    }
+}
+
+/* Consistent section rhythm and keyboard feedback */
+#about,
+#experience,
+#education,
+#projects,
+#achievements,
+#contact {
+    padding-block: 5rem !important;
+    scroll-margin-top: 5rem;
+}
+
+#about .container > h3,
+#experience .container > h3,
+#education .container > h3,
+#projects .container > h3,
+#achievements .container > h3,
+#contact .container > h3 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#about a:focus-visible,
+#experience a:focus-visible,
+#education a:focus-visible,
+#projects a:focus-visible,
+#achievements a:focus-visible,
+#contact a:focus-visible,
+#experience button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+#experience .experience-container {
+    border: 1px solid var(--text-secondary-color);
+    border-radius: 0.6rem;
+    box-shadow: 0 1rem 2.5rem rgb(20 35 50 / 7%);
+}
+
+#experience .experience-container .nav-pills {
+    flex-wrap: nowrap;
+    gap: 0.25rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+#experience .nav-item .nav-link {
+    min-height: 2.75rem;
+    padding: 0.65rem 0.9rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    color: var(--text-color) !important;
+    font: inherit;
+    white-space: nowrap;
+}
+
+#experience .nav-item .nav-link.active {
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color) !important;
+    font-weight: 700;
+}
+
+#experience .experience-container .tab-content {
+    padding: 1.25rem 0.75rem 0.5rem;
+}
+
+#achievements .card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.75rem 2rem rgb(20 35 50 / 6%);
+}
+
+#achievements .card:hover,
+#achievements .card:focus-visible {
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 767.98px) {
+    #about,
+    #experience,
+    #education,
+    #projects,
+    #achievements,
+    #contact {
+        padding-block: 3.5rem !important;
+    }
+
+    #about .container > h3,
+    #experience .container > h3,
+    #education .container > h3,
+    #projects .container > h3,
+    #achievements .container > h3,
+    #contact .container > h3 {
+        margin-bottom: 1.75rem;
+        font-size: 1.75rem;
+    }
+
+    #experience .experience-container .tab-content {
+        padding-inline: 0.25rem;
+    }
+}
